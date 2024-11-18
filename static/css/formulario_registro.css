@@ -1,0 +1,81 @@
+/* Estilos para el contenedor del formulario */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.596);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+/* Reducir el margen entre las etiquetas y los campos */
+form label {
+    margin-bottom: 2px; /* Reduce el espacio debajo de las etiquetas */
+    font-weight: bold;
+}
+
+form input, 
+form select, 
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 1px; /* Reduce el espacio encima del campo */
+    margin-bottom: 1px; /* Reduce el espacio debajo del campo */
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+
+
+/* Botón de enviar centrado */
+form input[type="submit"] {
+    align-self: center;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+button.volver-inicio {
+    align-self: center;
+    background-color: #2680cf; /* Color gris para diferenciarlo */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 10px;
+    font-size: 14px;
+    width: auto; /* Botón más pequeño */
+}
+
+button.volver-inicio:hover {
+    background-color: #5a6268;
+}
+
+/* Estilos para la sección de género */
+.genero-opciones {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.genero-opciones input[type="radio"] {
+    margin-right: 5px;
+}
