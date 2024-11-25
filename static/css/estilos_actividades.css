@@ -1,0 +1,40 @@
+/* estilos_actividades.css */
+#actividades h2 {
+    color: #004d99; /* Cambia el color del texto */
+    font-size: 2.5em; /* Tamaño del encabezado */
+    text-align: center; /* Centrar el texto */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+#actividades{
+    padding: 0 80px; /* Relleno a los lados izquierdo y derecho */
+}
+#actividades li {
+    margin-bottom: 20px; /* Espaciado entre elementos de la lista */
+    list-style-type: none; /* Quitar viñetas */
+}
+#actividades li h3 {
+    color: #004d99; /* Color del título de la actividad */
+    font-size: 1.5em; /* Tamaño del título */
+    margin-bottom: 10px; /* Espaciado debajo del título */
+    text-align:left;
+    margin: 0 0 10px 0; /* Espaciado solo debajo del título */
+}
+#actividades li p {
+    font-size: 1.1em; /* Tamaño del texto */
+    text-align: justify; /* Justifica el texto */
+    margin-bottom: 15px; /* Espaciado entre párrafo y título */
+    margin: 0; /* Quita márgenes innecesarios */
+}
+#actividades li img {
+    display: block;
+    margin: 10px auto; /* Centra la imagen */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.205); /* Sombra */
+    width: 300px; /* Ajusta el tamaño de la imagen */
+}
+.actividad {
+    display: flex; /* Aplica flexbox para alinear la imagen y el contenido horizontalmente */
+    align-items: flex-start; /* Alinea los elementos al inicio vertical */
+    gap: 20px; /* Espaciado entre la imagen y el contenido de texto */
+    margin-bottom: 20px; /* Espaciado entre actividades */
+}

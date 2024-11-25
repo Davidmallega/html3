@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Corporativa de la Organización</title>
-    <link rel="stylesheet" href="../static/css/stylenav.css">
-     
+    <title>Ecofuturo</title>
+    <link rel="stylesheet" href="../static/css/stylenav.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/estilos_eventos.css" type="text/css">
+    <style>
+         /* incrustacion en esta misma hoja de estilos css  */
+        #quienes-somos h2 {
+            color: #004d99; /* Cambia el color del encabezado */
+            font-size: 2.5em; /* Tamaño más grande */
+            text-align: center; /* Centra el texto */
+            margin-bottom: 20px; /* Espaciado inferior */
+        }
+
+        #quienes-somos p {
+            font-size: 1.2em; /* Tamaño del texto más grande */
+            line-height: 1.8; /* Espaciado entre líneas */
+            text-align: justify; /* Justifica el texto */
+            margin-bottom: 15px; /* Espaciado entre párrafos */
+            padding: 0 80px;/* relleno a los lados izquierdo y derecho */
+        }
+
+        #quienes-somos .imagenes img {
+            display: block;
+            margin: 20px auto; /* Centra la imagen */
+            border-radius: 35px; /* Bordes redondeados */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+        }
+        
+    </style>
+    
+    <style>
+    @import url("../static/css/estilos_actividades.css") screen;
+    </style>
+
 </head>
 <body>
 
@@ -26,7 +56,7 @@
 
     <section id="quienes-somos">
         <h2>¿Quiénes Somos?</h2>
-        <p>Somstatic; una organización sin fines de lucro dedicada a la conservación del medio ambiente y a la promoción de una sociedad más 
+        <p>Ecofuturo una organización sin fines de lucro dedicada a la conservación del medio ambiente y a la promoción de una sociedad más 
             consciente y responsable con su entorno. Creemos firmemente en la importancia de educar a las personas sobre el impacto que nuestras 
             acciones tienen en el planeta y en cómo podemos reducir nuestra huella ecológica a través de prácticas sostenibles.</p>
         
@@ -49,42 +79,62 @@
 
             <section id="actividades">
                 <h2>Actividades Realizadas</h2>
+                <br>
+                <br>
                 <ul>
                     <li>
-                        <h3>Campaña de Reforestación</h3>
-                        <img src="../images/reforestacion.jpg" alt="Personas plantando árboles" width="300">
-                        <p>Participamos en campañas de reforestación para restaurar ecosistemas y aumentar la cobertura vegetal 
-                            en áreas degradadas. Esta actividad involucra a la comunidad en la plantación de árboles nativos, 
-                            contribuyendo a la lucha contra el cambio climático.</p>
+                        <div class="actividad">
+                            <img src="../images/reforestacion.jpg" alt="Personas plantando árboles" width="300">
+                            <div>
+                                <h3>Campaña de Reforestación</h3>
+                                <p>Participamos en campañas de reforestación para restaurar ecosistemas y aumentar la cobertura vegetal 
+                                en áreas degradadas. Esta actividad involucra a la comunidad en la plantación de árboles nativos, 
+                                contribuyendo a la lucha contra el cambio climático.</p>
+                            </div>
+                        </div>  
                     </li>
-            
+                        <br>
                     <li>
-                        <h3>Taller de Reciclaje</h3>
-                        <img src="../images/taller.jpg" alt="Personas aprendiendo sobre reciclaje" width="300">
-                        <p>Organizamos talleres educativos sobre el reciclaje y la reducción de residuos. En estos eventos, 
-                            los participantes aprenden a separar y reutilizar materiales, promoviendo una cultura de 
-                            sostenibilidad en su vida diaria.</p>
+                        <div class="actividad">
+                            <img src="../images/taller.jpg" alt="Personas aprendiendo sobre reciclaje" width="300">
+                            <div>
+                                <h3>Taller de Reciclaje</h3>
+                                <p>Organizamos talleres educativos sobre el reciclaje y la reducción de residuos. En estos eventos, 
+                                 los participantes aprenden a separar y reutilizar materiales, promoviendo una cultura de 
+                                sostenibilidad en su vida diaria.</p>
+                            </div>  
+                        </div>
                     </li>
-            
+                        <br>
                     <li>
-                        <h3>Jornada de Limpieza de Playas</h3>
-                        <img src="../images/limpieza.jpg" alt="Voluntarios limpiando una playa" width="300">
-                        <p>Realizamos jornadas de limpieza de playas para proteger la biodiversidad marina y mantener nuestros 
-                            entornos naturales libres de contaminación. Esta actividad fomenta la responsabilidad ambiental 
-                            entre los voluntarios y la comunidad.</p>
+                        <div class="actividad">
+                            <img src="../images/limpieza.jpg" alt="Voluntarios limpiando una playa" width="300">
+                            <div>
+                                <h3>Jornada de Limpieza de Playas</h3>
+                                <p>Realizamos jornadas de limpieza de playas para proteger la biodiversidad marina y mantener nuestros 
+                                entornos naturales libres de contaminación. Esta actividad fomenta la responsabilidad ambiental 
+                                entre los voluntarios y la comunidad.</p>
+                            </div>
+                        </div>
+
                     </li>
-            
+                        <br>
                     <li>
-                        <h3>Charlas sobre el Cambio Climático</h3>
-                        <img src="../images/charla.jpg" alt="Charla educativa sobre el cambio climático" width="300">
-                        <p>Ofrecemos charlas informativas para concienciar sobre los efectos del cambio climático. Estas sesiones 
-                            educativas están diseñadas para informar a la comunidad sobre los desafíos ambientales actuales y 
-                            la importancia de tomar medidas sostenibles.</p>
+                        <div class="actividad">
+                            <img src="../images/charla.jpg" alt="Charla educativa sobre el cambio climático" width="300">
+                            <div>
+                                <h3>Charlas sobre el Cambio Climático</h3>
+                                <p>Ofrecemos charlas informativas para concienciar sobre los efectos del cambio climático. Estas sesiones 
+                                educativas están diseñadas para informar a la comunidad sobre los desafíos ambientales actuales y 
+                                la importancia de tomar medidas sostenibles.</p>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </section>
-            
 
+            <br>
+            
             <section id="eventos">
                 <h2>Próximos Eventos Planificados</h2>
                 <table border="1" cellpadding="10" cellspacing="0">
