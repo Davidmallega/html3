@@ -1,19 +1,9 @@
 #temas-interes h2 {
-    color: #004d99; /* Color del título */
-    font-size: 2.5em; /* Tamaño del encabezado */
     text-align: center; /* Centrar el texto */
     margin-bottom: 20px; /* Espaciado inferior */
 }
 #temas-interes h3 {
-    color: #004d99; /* Color del título */
-    font-size: 1.5em;
     text-align: center; /* Centrar el texto */
-}
-#temas-interes p {
-    font-size: 1.1em; /* Tamaño del texto */
-    text-align: justify; /* Justifica el texto */
-    margin-bottom: 15px; /* Espaciado entre párrafo y título */
-    margin: 0; /* Quita márgenes innecesarios */
 }
 
 #temas-interes {
@@ -34,8 +24,7 @@
 }
 
 #temas-interes .imagenes p {
-    font-size: 1.1em; /* Tamaño del texto */
     text-align: justify; /* Justificar texto */
     margin: 0; /* Quitar márgenes innecesarios */
-    line-height: 1.8; /* Espaciado entre líneas */
+    line-height: 1.5; /* Espaciado entre líneas */
 }

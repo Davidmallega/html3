@@ -1,8 +1,3 @@
-#audio h3 {
-    color: #004d99; /* Color del título */
-    font-size: 1.5em;
-    text-align: center; /* Centrar el texto */
-}
 
 #audio audio {
     width: 50%; /* Ajustar el tamaño del audio */
@@ -14,7 +9,7 @@
 #audio p {
     margin-top: 10px; /* Espacio entre el audio y el texto */
     text-align: center; /* Centrar el texto */
-    font-size: 1.2em; /* Tamaño del texto */
+    
 }
 
 .container {
@@ -28,13 +23,10 @@
 }
 
 #videos-relacionados h2  {
-    color: #004d99; /* Color del título */
-    font-size: 1.5em;
     text-align: center; /* Centrar el texto */
 }
 #videos-relacionados p  {
     text-align: center; /* Centrar el texto */
-    font-size: 1.1em;
 }
 
 iframe {

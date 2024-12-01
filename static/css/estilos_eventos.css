@@ -13,7 +13,6 @@ table th, table td {
 
 table th {
     background-color: #f4f4f4; /* Fondo del encabezado */
-    font-weight: bold;
     color: #333;
 }
 
@@ -22,8 +21,6 @@ table tr:nth-child(even) {
 }
 
 #eventos h2 {
-    color: #004d99; /* Cambia el color del texto */
-    font-size: 2.5em; /* Tamaño del encabezado */
     text-align: center; /* Centrar el texto */
     margin-bottom: 20px; /* Espaciado inferior */
 }

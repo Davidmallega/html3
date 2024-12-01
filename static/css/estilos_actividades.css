@@ -1,8 +1,5 @@
 /* estilos_actividades.css */
 #actividades h2 {
-    color: #004d99; /* Cambia el color del texto */
-    font-size: 2.5em; /* Tamaño del encabezado */
-    text-align: center; /* Centrar el texto */
     margin-bottom: 20px; /* Espaciado inferior */
 }
 #actividades{
@@ -13,18 +10,12 @@
     list-style-type: none; /* Quitar viñetas */
 }
 #actividades li h3 {
-    color: #004d99; /* Color del título de la actividad */
-    font-size: 1.5em; /* Tamaño del título */
     margin-bottom: 10px; /* Espaciado debajo del título */
     text-align:left;
     margin: 0 0 10px 0; /* Espaciado solo debajo del título */
 }
-#actividades li p {
-    font-size: 1.1em; /* Tamaño del texto */
-    text-align: justify; /* Justifica el texto */
-    margin-bottom: 15px; /* Espaciado entre párrafo y título */
-    margin: 0; /* Quita márgenes innecesarios */
-}
+
+
 #actividades li img {
     display: block;
     margin: 10px auto; /* Centra la imagen */
