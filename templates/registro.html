@@ -1,3 +1,4 @@
+<!--formulario registro-->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -5,8 +6,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Nuevos Usuarios</title>
     <link rel="stylesheet" href="../static/css/stylenav.css">
-    <link rel="stylesheet" href="../static/css/formulario_registro.css">
     
+<style>
+/* Contenedor del formulario registro */
+.container {
+    max-width: 600px; /* Ancho máximo del formulario */
+    margin: 50px auto; /* Centra el formulario */
+    padding: 20px; /* Espaciado interno */
+    background-color: #f2f2f2; /* Fondo claro */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.596); /* Sombra más intensa */
+}
+
+/* Estilo general del formulario */
+form {
+    display: flex; /* Usa flexbox */
+    flex-direction: column; /* Coloca elementos en columna */
+    align-items: flex-start; /* Alinea elementos al inicio */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+/* Estilo para etiquetas */
+form label {
+    margin-bottom: 2px; /* Espaciado más ajustado */
+    font-weight: bold; /* Resalta el texto */
+}
+
+/* Campos de entrada */
+form input, form select, form textarea {
+    width: 100%; /* Ancho total del formulario */
+    padding: 8px; /* Espaciado interno */
+    margin-top: 1px; /* Espaciado superior */
+    margin-bottom: 1px; /* Espaciado inferior */
+    border: 1px solid #ddd; /* Borde tenue */
+    border-radius: 10px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+}
+
+/* Botón de envío */
+form input[type="submit"] {
+    align-self: center; /* Centra el botón */
+    background-color: #007bff; /* Color azul */
+    color: white; /* Texto blanco */
+    padding: 10px 20px; /* Tamaño del botón */
+    border: none; /* Sin borde */
+    border-radius: 10px; /* Bordes redondeados */
+    cursor: pointer; /* Indicador de clic */
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3; /* Azul más oscuro en hover */
+}
+
+/* Botón de regreso */
+button.volver-inicio {
+    align-self: center; /* Centra el botón */
+    background-color: #2680cf; /* Color azul claro */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 8px 16px; /* Tamaño del botón */
+    border-radius: 10px; /* Bordes redondeados */
+    cursor: pointer; /* Indicador de clic */
+    margin-top: 10px;/* separacion con el boton de registrtar */
+}
+
+button.volver-inicio:hover {
+    background-color: #5a6268; /* Cambia a un gris más oscuro en hover */
+}
+
+/* Estilo para opciones de género */
+.genero-opciones {
+    display: flex; /* Usa flexbox para alinear horizontalmente */
+    gap: 15px; /* Espaciado entre opciones */
+    align-items: center; /* Alinea verticalmente */
+}
+
+.genero-opciones input[type="radio"] {
+    margin-right: 5px; /* Espaciado entre botón y texto */
+}
+
+
+
+
+
+</style>    
+        
 </head>
 <body>
     <a href="index.html">

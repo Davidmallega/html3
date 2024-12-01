@@ -1,0 +1,41 @@
+#temas-interes h2 {
+    color: #004d99; /* Color del título */
+    font-size: 2.5em; /* Tamaño del encabezado */
+    text-align: center; /* Centrar el texto */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+#temas-interes h3 {
+    color: #004d99; /* Color del título */
+    font-size: 1.5em;
+    text-align: center; /* Centrar el texto */
+}
+#temas-interes p {
+    font-size: 1.1em; /* Tamaño del texto */
+    text-align: justify; /* Justifica el texto */
+    margin-bottom: 15px; /* Espaciado entre párrafo y título */
+    margin: 0; /* Quita márgenes innecesarios */
+}
+
+#temas-interes {
+    padding: 0 80px; /* Relleno a los lados izquierdo y derecho */
+}
+
+#temas-interes .imagenes {
+    display: flex; /* Aplica flexbox para alinear la imagen y el contenido horizontalmente */
+    align-items: flex-start; /* Alinea los elementos al inicio vertical */
+    gap: 20px; /* Espaciado entre la imagen y el contenido de texto */
+    margin-bottom: 20px; /* Espaciado entre bloques */
+}
+
+#temas-interes .imagenes img {
+    width: 350px; /* Ajusta el tamaño de la imagen */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+#temas-interes .imagenes p {
+    font-size: 1.1em; /* Tamaño del texto */
+    text-align: justify; /* Justificar texto */
+    margin: 0; /* Quitar márgenes innecesarios */
+    line-height: 1.8; /* Espaciado entre líneas */
+}

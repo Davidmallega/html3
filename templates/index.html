@@ -6,30 +6,60 @@
     <title>Ecofuturo</title>
     <link rel="stylesheet" href="../static/css/stylenav.css" type="text/css">
     <link rel="stylesheet" href="../static/css/estilos_eventos.css" type="text/css">
-    <style>
-         /* incrustacion en esta misma hoja de estilos css  */
+    <link rel="stylesheet" href="../static/css/temas-interes.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/audio.css" type  = "text/css">
+
+        <style>
+        body {
+        font-family: Arial, sans-serif; /* Fuente base para todos los textos */
+        color: #2c2c2c; /* Color */
+        }
+        
+        h2 {
+        font-size: 2em; /* Tamaño uniforme para todos los encabezados h2 */
+        color: #5ecd72; /* Color */
+        text-align: center; /* Alineación estándar a la izquierda */
+        margin-bottom: 15px; /* Espaciado inferior */
+        } 
+
+        h3 {
+        font-size: 1.5em; /* Tamaño uniforme para todos los encabezados h3 */
+        color: #6ac9a2; /* Color */
+        text-align: center; /* Alineación estándar a la izquierda */
+        margin-bottom: 15px; /* Espaciado inferior */
+        }
+
+        p {
+        font-size: 1em; /* Tamaño de texto estándar */
+        text-align: justify; /* Justifica el texto para mejorar la legibilidad */
+        margin-bottom: 10px; /* Espaciado inferior entre párrafos */
+        }
+
+
+         /* incrustacion  */
         #quienes-somos h2 {
-            color: #004d99; /* Cambia el color del encabezado */
-            font-size: 2.5em; /* Tamaño más grande */
-            text-align: center; /* Centra el texto */
-            margin-bottom: 20px; /* Espaciado inferior */
+        font-family: 'Georgia', serif; /* Fuente exclusiva para esta sección */
+        color: #004d99; /* Color azul oscuro */
+        font-size: 2.5em; /* Tamaño mayor para destacar el encabezado */
+        text-align: center; /* Centra el texto */
+        margin-bottom: 20px; /* Espaciado inferior */
         }
 
         #quienes-somos p {
-            font-size: 1.2em; /* Tamaño del texto más grande */
-            line-height: 1.8; /* Espaciado entre líneas */
-            text-align: justify; /* Justifica el texto */
-            margin-bottom: 15px; /* Espaciado entre párrafos */
-            padding: 0 80px;/* relleno a los lados izquierdo y derecho */
+        font-family: 'Georgia', serif;/* Fuente exclusiva para esta sección */
+        font-size: 1.2em; /* Texto más grande para esta sección */
+        line-height: 1.8; /* Espaciado entre líneas más amplio */
+        color: #161515; /* Color de texto más oscuro */
+        padding: 0 80px; /* Margen interno a los lados */
         }
 
         #quienes-somos .imagenes img {
-            display: block;
-            margin: 20px auto; /* Centra la imagen */
-            border-radius: 35px; /* Bordes redondeados */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+        display: block; /* Imagen en bloque */
+        margin: 20px auto; /* Centra la imagen */
+        border-radius: 35px; /* Bordes redondeados */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
         }
-        
+
     </style>
     
     <style>
@@ -100,7 +130,7 @@
                             <div>
                                 <h3>Taller de Reciclaje</h3>
                                 <p>Organizamos talleres educativos sobre el reciclaje y la reducción de residuos. En estos eventos, 
-                                 los participantes aprenden a separar y reutilizar materiales, promoviendo una cultura de 
+                                los participantes aprenden a separar y reutilizar materiales, promoviendo una cultura de 
                                 sostenibilidad en su vida diaria.</p>
                             </div>  
                         </div>
@@ -137,6 +167,7 @@
             
             <section id="eventos">
                 <h2>Próximos Eventos Planificados</h2>
+          
                 <table border="1" cellpadding="10" cellspacing="0">
                     <thead>
                         <tr>
@@ -185,14 +216,16 @@
                         </tr>
                     </tbody>
                 </table>
+          
             </section>
-            
-            
+
+            <br>
+            <br>
+            <br>
 
 
-            <section id="temas-interes">
+            <div id="temas-interes">
                 <h2>Temas de Interés: Cambio Climático</h2>
-               
                 <p>El cambio climático es uno de los desafíos más críticos que enfrenta nuestra sociedad en la actualidad. Se refiere a las variaciones significativas y 
                     prolongadas en los patrones climáticos globales. Estas alteraciones, que incluyen temperaturas más cálidas, cambios en los patrones de lluvia y un 
                     aumento en la frecuencia de eventos climáticos extremos, son causadas en gran medida por las actividades humanas, como la quema de combustibles fósiles y la deforestación.</p>
@@ -201,23 +234,36 @@
                     de los glaciares y el aumento del nivel del mar hasta la pérdida de biodiversidad y la alteración de los hábitats naturales, el impacto es devastador. 
                     Entender estos efectos es crucial para desarrollar estrategias de mitigación que ayuden a proteger el medio ambiente y garantizar un 
                     futuro sostenible para las generaciones venideras.</p>
-            
-                
+                <br>
+                <h3>Impactos visibles del Cambio Climático</h3>
                 <div class="imagenes">
-                    <h3>Impactos visibles del Cambio Climático</h3>
                     <img src="../images/impacto.jpg" alt="Impacto del cambio climático en el planeta" width="400">
-                    <p>La creciente temperatura global está afectando tanto los ecosistemas naturales como los sistemas agrícolas. Las sequías, las olas de calor y 
-                        las tormentas severas se han vuelto más frecuentes, poniendo en riesgo la seguridad alimentaria y la salud humana.</p>
-            
+                    <p>La creciente temperatura global está afectando tanto los ecosistemas naturales como los sistemas agrícolas. 
+                        Las sequías, las olas de calor y las tormentas severas se han vuelto más frecuentes, poniendo en riesgo la 
+                        seguridad alimentaria y la salud humana. Este cambio extremo obliga a comunidades rurales a migrar, 
+                        generando nuevos desafíos sociales y económicos.</p>
+                </div> 
+
+                <div class="imagenes">
                     <img src="../images/deshielo.jpeg" alt="Deshielo en las zonas polares" width="400">
-                    <p>El derretimiento de los casquetes polares está contribuyendo al aumento del nivel del mar, lo que amenaza a las comunidades costeras y a la 
-                        vida marina. Si no se toman medidas urgentes, muchas especies podrían enfrentar la extinción.</p>
-            
-                    <img src="../images/efectobio.jpg" alt="Efectos del cambio climático en la biodiversidad" width="400">
-                    <p>La biodiversidad del planeta está bajo amenaza. El cambio en los patrones climáticos está alterando los ecosistemas, lo que lleva a la pérdida 
-                        de hábitats y pone en peligro a las especies más vulnerables.</p>
+                    <p> El derretimiento de los casquetes polares está contribuyendo al aumento del nivel del mar, lo que amenaza 
+                        a las comunidades costeras y la vida marina. Si no se toman medidas urgentes, muchas especies podrían 
+                        enfrentar la extinción. Además, el deshielo libera gases atrapados como el metano, agravando el efecto 
+                        invernadero y acelerando el cambio climático.</p>
                 </div>
-            
+
+                <div class="imagenes">
+                    <img src="../images/efectobio.jpg" alt="Efectos del cambio climático en la biodiversidad" width="400">
+                    <p> La biodiversidad del planeta está bajo amenaza. El cambio en los patrones climáticos altera los ecosistemas, 
+                    llevando a la pérdida de hábitats y poniendo en peligro a las especies más vulnerables. Muchas desempeñan 
+                    un papel clave en los ecosistemas, y su desaparición podría causar un desequilibrio ecológico irreversible.</p>
+                </div>
+            </div>
+            <br>
+
+
+    <div class="container">
+            <div id="audio">
                 <!-- Audio educativo sobre el cambio climático -->
                 <h3>Escucha más sobre este tema</h3>
                 <audio controls>
@@ -227,13 +273,15 @@
                 </audio>
                 <p>Escucha este audio para obtener más información sobre cómo el cambio climático está afectando nuestro mundo y qué acciones podemos tomar para reducir nuestro impacto.</p>
             
+       
                 <!-- Enlace para más información -->
                 <p>
                     Para más información sobre el cambio climático, visita el siguiente enlace: 
                     <a href="https://es.wikipedia.org/wiki/Cambio_clim%C3%A1tico" target="_blank">Más sobre Cambio Climático</a>
                 </p>
             </section>
-            
+        </div>
+    </div> 
             
             <!-- Videos Relacionados -->
             <section id="videos-relacionados">
@@ -244,10 +292,6 @@
             <p>Explora más videos sobre el cambio climático para entender su impacto.</p>
             </section>
 
-
-
-
-
             <footer class="footer-content">
                 <a href="index.html">
                     <img src="../images/iso-02-02.png" alt="Logo de la empresa" class="logo-empresa-iso">
@@ -255,12 +299,5 @@
                 <p>&copy; 2024 Organización Ambiental. Todos los derechos reservados.</p>
                 <p>Contacto: <a href="mailto:info@ecofuturo.org">info@ecofuturo.org</a></p>
             </footer>
-            
-
-
-
-            
-
-
 </body>
 </html>

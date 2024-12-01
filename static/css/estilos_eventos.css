@@ -1,8 +1,8 @@
 /* estilos_eventos.css */
 table {
     border-collapse: collapse; /* Quitar espacio entre bordes */
-    width: 100%;
-    
+    width: 80%;
+    margin: 20px auto; /* Centra la imagen */
 }
 
 table th, table td {
@@ -27,3 +27,4 @@ table tr:nth-child(even) {
     text-align: center; /* Centrar el texto */
     margin-bottom: 20px; /* Espaciado inferior */
 }
+

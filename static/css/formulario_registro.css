@@ -1,78 +1,80 @@
-/* Estilos para el contenedor del formulario */
+/* Contenedor del formulario registro */
 .container {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #f2f2f2;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.596);
+    max-width: 600px; /* Ancho máximo del formulario */
+    margin: 50px auto; /* Centra el formulario */
+    padding: 20px; /* Espaciado interno */
+    background-color: #f2f2f2; /* Fondo claro */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.596); /* Sombra más intensa */
 }
 
+/* Estilo general del formulario */
 form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 20px;
+    display: flex; /* Usa flexbox */
+    flex-direction: column; /* Coloca elementos en columna */
+    align-items: flex-start; /* Alinea elementos al inicio */
+    margin-top: 20px; /* Espaciado superior */
 }
 
-/* Reducir el margen entre las etiquetas y los campos */
+/* Estilo para etiquetas */
 form label {
-    margin-bottom: 2px; /* Reduce el espacio debajo de las etiquetas */
-    font-weight: bold;
+    margin-bottom: 2px; /* Espaciado más ajustado */
+    font-weight: bold; /* Resalta el texto */
 }
 
-form input, 
-form select, 
-form textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 1px; /* Reduce el espacio encima del campo */
-    margin-bottom: 1px; /* Reduce el espacio debajo del campo */
-    border: 1px solid #ffffff;
-    border-radius: 20px;
-    box-sizing: border-box;
+/* Campos de entrada */
+form input, form select, form textarea {
+    width: 100%; /* Ancho total del formulario */
+    padding: 8px; /* Espaciado interno */
+    margin-top: 1px; /* Espaciado superior */
+    margin-bottom: 1px; /* Espaciado inferior */
+    border: 1px solid #ddd; /* Borde tenue */
+    border-radius: 10px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluye padding y borde en el ancho total */
 }
 
-/* Botón de enviar centrado */
+/* Botón de envío */
 form input[type="submit"] {
-    align-self: center;
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    margin-top: 15px;
+    align-self: center; /* Centra el botón */
+    background-color: #007bff; /* Color azul */
+    color: white; /* Texto blanco */
+    padding: 10px 20px; /* Tamaño del botón */
+    border: none; /* Sin borde */
+    border-radius: 10px; /* Bordes redondeados */
+    cursor: pointer; /* Indicador de clic */
 }
 
 form input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Azul más oscuro en hover */
 }
 
+/* Botón de regreso */
 button.volver-inicio {
-    align-self: center;
-    background-color: #2680cf; /* Color gris para diferenciarlo */
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    cursor: pointer;
-    border-radius: 20px;
-    margin-top: 10px;
-    font-size: 14px;
-    width: auto; /* Botón más pequeño */
+    align-self: center; /* Centra el botón */
+    background-color: #2680cf; /* Color azul claro */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 8px 16px; /* Tamaño del botón */
+    border-radius: 10px; /* Bordes redondeados */
+    cursor: pointer; /* Indicador de clic */
+    margin-top: 10px;/* separacion con el boton de registrtar */
 }
 
 button.volver-inicio:hover {
-    background-color: #5a6268;
+    background-color: #5a6268; /* Cambia a un gris más oscuro en hover */
 }
 
-/* Estilos para la sección de género */
+/* Estilo para opciones de género */
 .genero-opciones {
-    display: flex;
-    gap: 15px;
-    align-items: center;
+    display: flex; /* Usa flexbox para alinear horizontalmente */
+    gap: 15px; /* Espaciado entre opciones */
+    align-items: center; /* Alinea verticalmente */
 }
 
 .genero-opciones input[type="radio"] {
-    margin-right: 5px;
+    margin-right: 5px; /* Espaciado entre botón y texto */
 }
+
+
+
+

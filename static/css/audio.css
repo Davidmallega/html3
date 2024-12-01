@@ -1,0 +1,45 @@
+#audio h3 {
+    color: #004d99; /* Color del título */
+    font-size: 1.5em;
+    text-align: center; /* Centrar el texto */
+}
+
+#audio audio {
+    width: 50%; /* Ajustar el tamaño del audio */
+    margin-bottom: 20px; /* Espacio debajo del audio */
+    display: block; /* Alinear el audio en bloque */
+    margin: 0 auto; /* Centrar el audio */
+}
+
+#audio p {
+    margin-top: 10px; /* Espacio entre el audio y el texto */
+    text-align: center; /* Centrar el texto */
+    font-size: 1.2em; /* Tamaño del texto */
+}
+
+.container {
+    display: flex;
+    margin: 40px; /* marge a la pagina */
+    background-color: rgb(255, 255, 255);
+    padding: 20px; /* Espacio adicional alrededor del contenedor */
+    border-radius: 25px; /* Ajustar el radio del borde */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.441);
+    
+}
+
+#videos-relacionados h2  {
+    color: #004d99; /* Color del título */
+    font-size: 1.5em;
+    text-align: center; /* Centrar el texto */
+}
+#videos-relacionados p  {
+    text-align: center; /* Centrar el texto */
+    font-size: 1.1em;
+}
+
+iframe {
+    display: block;
+    margin: 20px auto; /* Centra la imagen */
+    border-radius: 35px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
