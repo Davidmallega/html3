@@ -1,4 +1,11 @@
 /* Estilos para la navegación en línea */
+header {
+    background-color: #2057da; /* Fondo azul oscuro */
+    padding: 25px 0; /* Espaciado superior e inferior */
+    border-radius: 10PX;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.268); /* Sombra */
+}
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -13,7 +20,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #000; 
+    color: #ffffff; 
     font-weight: bold;
     font-family: 'Georgia', serif;
     font-size: 14px;
@@ -21,7 +28,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #0066cc; 
+    color: #060606; 
 }
 
 

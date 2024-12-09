@@ -1,27 +1,29 @@
-/* estilos_eventos.css */
-table {
-    border-collapse: collapse; /* Quitar espacio entre bordes */
-    width: 80%;
-    margin: 20px auto; /* Centra la imagen */
+/* Estilo para la tabla */
+#eventos table {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    border-collapse: collapse; /* Elimina espacios entre celdas */
+    margin-top: 20px;
+    background-color: #f9f9f9; /* Fondo claro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
 }
 
-table th, table td {
-    border: 1px solid #ddd; /* Bordes de la tabla */
+#eventos th, #eventos td {
+    text-align: left; /* Alineación de texto a la izquierda */
     padding: 10px; /* Espaciado interno */
-    text-align: left; /* Alinear a la izquierda */
+    border: 1px solid #ddd; /* Bordes claros */
 }
 
-table th {
-    background-color: #f4f4f4; /* Fondo del encabezado */
-    color: #333;
+#eventos th {
+    background-color: #004d99; /* Fondo azul oscuro */
+    color: white; /* Texto blanco */
+    font-weight: bold;
+    
 }
 
-table tr:nth-child(even) {
-    background-color: #f9f9f9; /* Filas alternadas */
+#eventos tr:nth-child(even) {
+    background-color: #f1f1f1; /* Color alternado para filas pares */
 }
 
-#eventos h2 {
-    text-align: center; /* Centrar el texto */
-    margin-bottom: 20px; /* Espaciado inferior */
+#eventos tr:hover {
+    background-color: #23bef253; /* Fondo más claro al pasar el cursor */
 }
-

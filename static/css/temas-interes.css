@@ -2,6 +2,7 @@
     text-align: center; /* Centrar el texto */
     margin-bottom: 20px; /* Espaciado inferior */
 }
+
 #temas-interes h3 {
     text-align: center; /* Centrar el texto */
 }
@@ -11,20 +12,36 @@
 }
 
 #temas-interes .imagenes {
-    display: flex; /* Aplica flexbox para alinear la imagen y el contenido horizontalmente */
-    align-items: flex-start; /* Alinea los elementos al inicio vertical */
-    gap: 20px; /* Espaciado entre la imagen y el contenido de texto */
-    margin-bottom: 20px; /* Espaciado entre bloques */
+    display: flex; /* Alinear elementos horizontalmente */
+    align-items: flex-start; /* Alinea al inicio verticalmente */
+    gap: 20px; /* Espaciado entre bloques */
+    margin-bottom: 20px; /* Espaciado inferior */
+    position: relative; /* Establece un contexto de posicionamiento */
 }
 
 #temas-interes .imagenes img {
-    width: 350px; /* Ajusta el tamaño de la imagen */
+    width: 700px; /* Ajusta el tamaño de la imagen */
     border-radius: 15px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.393); /* Sombra */
+    transition: transform 0.2s ease; /* Suaviza el efecto */
 }
 
+#temas-interes img:hover {
+    transform: scale(1.05); /* Escala la imagen al 110% */
+}
+
+/* Texto superpuesto sobre la imagen */
 #temas-interes .imagenes p {
-    text-align: justify; /* Justificar texto */
-    margin: 0; /* Quitar márgenes innecesarios */
+    position: absolute; /* Superposición absoluta */
+    bottom: 10px; /* Alinea al fondo del contenedor */
+    left: 10px; /* Alinea a la izquierda */
+    background-color: rgba(255, 249, 249, 0.918); /* Fondo negro translúcido */
+    color: rgb(26, 1, 1); /* Texto blanco */
+    padding: 5px 10px; /* Espaciado interno */
+    border-radius: 20px; /* Bordes redondeados */
+    font-size: 0.9em; /* Tamaño de fuente */
+    margin: 0; /* Sin márgenes extra */
     line-height: 1.5; /* Espaciado entre líneas */
+    text-align: justify; /* Texto justificado */
+    width: 90%; /* Ancho relativo al contenedor */
 }
