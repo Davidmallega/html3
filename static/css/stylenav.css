@@ -1,7 +1,7 @@
 /* Estilos para la navegación en línea */
 header {
     background-color: #2057da; /* Fondo azul oscuro */
-    padding: 25px 0; /* Espaciado superior e inferior */
+    padding: 20px 0; /* Espaciado superior e inferior */
     border-radius: 10PX;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.268); /* Sombra */
 }

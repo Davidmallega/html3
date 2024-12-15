@@ -19,7 +19,6 @@
     list-style: none; /* Elimina viñetas */
     padding: 0;
 }
-
 #actividades img:hover {
     transform: scale(1.1); /* Escala la imagen al 110% */
 }
@@ -31,7 +30,6 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.205); /* Sombra */
     width: 300px; /* Ajusta el tamaño de la imagen */
     transition: transform 0.2s ease; /* Suaviza el efecto */
-    
 }
 .actividad {
     display: flex; /* Aplica flexbox para alinear la imagen y el contenido horizontalmente */
@@ -40,3 +38,6 @@
     margin-bottom: 20px; /* Espaciado entre actividades */
 }
 
+#actividades {
+    padding: 20px; /* Espaciado general */
+}

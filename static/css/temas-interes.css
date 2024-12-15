@@ -8,40 +8,56 @@
 }
 
 #temas-interes {
-    padding: 0 80px; /* Relleno a los lados izquierdo y derecho */
+    padding: 0 20px; /* Relleno a los lados izquierdo y derecho */
 }
 
 #temas-interes .imagenes {
-    display: flex; /* Alinear elementos horizontalmente */
-    align-items: flex-start; /* Alinea al inicio verticalmente */
-    gap: 20px; /* Espaciado entre bloques */
-    margin-bottom: 20px; /* Espaciado inferior */
-    position: relative; /* Establece un contexto de posicionamiento */
+    display: flex; /* Activar Flexbox */
+    flex-wrap: wrap; /* Permite que los elementos bajen a una nueva línea */
+    gap: 20px; /* Espaciado entre los elementos */
+    justify-content: center; /* Centra los elementos horizontalmente */
 }
 
-#temas-interes .imagenes img {
-    width: 700px; /* Ajusta el tamaño de la imagen */
+#temas-interes .imagen-container {
+    position: relative; /* Necesario para que .alerta use posicionamiento absoluto */
+    flex: 0 1 calc(50% - 20px); /* Cada elemento ocupa el 50% menos el gap */
+    box-sizing: border-box; /* Incluye el padding y border en el tamaño total */
+    background-color: #ffffff; /* Fondo blanco */
     border-radius: 15px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.393); /* Sombra */
-    transition: transform 0.2s ease; /* Suaviza el efecto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    overflow: hidden; /* Asegura que el contenido respete el contenedor */
+    transition: transform 0.3s ease; /* Transición suave */
 }
 
-#temas-interes img:hover {
-    transform: scale(1.05); /* Escala la imagen al 110% */
+#temas-interes .imagen-container img {
+    width: 100%; /* Imagen ocupa todo el ancho del contenedor */
+    height: auto; /* Mantiene proporciones */
+    display: block; /* Evita espacios extra debajo de la imagen */
 }
 
-/* Texto superpuesto sobre la imagen */
-#temas-interes .imagenes p {
-    position: absolute; /* Superposición absoluta */
-    bottom: 10px; /* Alinea al fondo del contenedor */
-    left: 10px; /* Alinea a la izquierda */
-    background-color: rgba(255, 249, 249, 0.918); /* Fondo negro translúcido */
-    color: rgb(26, 1, 1); /* Texto blanco */
+#temas-interes .imagen-container p {
+    padding: 10px; /* Espaciado interno */
+    text-align: justify; /* Justifica el texto */
+    font-size: 0.9em; /* Tamaño de texto más pequeño */
+    color: #333; /* Color gris oscuro */
+}
+
+#temas-interes .imagen-container img:hover {
+    transform: scale(1.05); /* Escala la imagen al 110% al pasar el mouse */
+}
+
+.alerta {
+    position: absolute; /* Posiciona el texto sobre la imagen */
+    top: 10px; /* Alinea el texto en la parte superior */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Ajusta el centrado horizontal */
+    background-color: rgba(255, 0, 0, 0.8); /* Fondo rojo translúcido */
+    color: white; /* Texto blanco */
+    font-size: 1.2em; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
     padding: 5px 10px; /* Espaciado interno */
-    border-radius: 20px; /* Bordes redondeados */
-    font-size: 0.9em; /* Tamaño de fuente */
-    margin: 0; /* Sin márgenes extra */
-    line-height: 1.5; /* Espaciado entre líneas */
-    text-align: justify; /* Texto justificado */
-    width: 90%; /* Ancho relativo al contenedor */
+    border-radius: 5px; /* Bordes redondeados */
+    z-index: 10; /* Asegura que esté encima de otros elementos */
+    text-align: center; /* Centra el texto */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para destacar */
 }

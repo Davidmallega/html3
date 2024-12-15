@@ -5,12 +5,14 @@
     margin-top: 20px;
     background-color: #f9f9f9; /* Fondo claro */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+
 }
 
 #eventos th, #eventos td {
     text-align: left; /* Alineación de texto a la izquierda */
     padding: 10px; /* Espaciado interno */
     border: 1px solid #ddd; /* Bordes claros */
+    word-wrap: break-word;/* Permite que el texto se divida en varias líneas */
 }
 
 #eventos th {
@@ -26,4 +28,14 @@
 
 #eventos tr:hover {
     background-color: #23bef253; /* Fondo más claro al pasar el cursor */
+}
+
+#eventos img {
+    width: 24px; /* Ajusta el tamaño de los íconos para que no sean demasiado grandes */
+    height: auto;
+}
+#eventos table {
+    width: calc(100% - 40px); /* Reducir el ancho para dejar espacio */
+    margin-right: 20px; /* Separa el borde derecho */
+    margin-left: 20px; /* Si deseas centrar simétricamente */
 }

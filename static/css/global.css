@@ -1,10 +1,8 @@
+/* Estilos global */
 main {
-    background-color: #67f2af1e; /* Fondo claro */
-    padding: 20px; /* Espaciado interno */
-    margin: 10px auto; /* Márgenes automáticos para centrar */
+    background-color: #ffffff; /* Fondo claro */
     border-radius: 25px; /* Bordes redondeados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.418); /* Sombra ligera */
-    max-width: 1200px; /* Ancho máximo */
 }
 
 body {
@@ -47,13 +45,27 @@ body {
     font-family: 'Georgia', serif;/* Fuente exclusiva para esta sección */
     font-size: 1.2em; /* Texto más grande para esta sección */
     line-height: 1.8; /* Espaciado entre líneas más amplio */
-    color: #161515; /* Color de texto más oscuro */
-    padding: 0 80px; /* Margen interno a los lados */
-    }
+    color: #161515; /* Color de texto más oscuro */ 
+    
+}
 
     #quienes-somos .imagenes img {
-    display: block; /* Imagen en bloque */
-    margin: 20px auto; /* Centra la imagen */
-    border-radius: 35px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
+        width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+        max-width: 750px; /* Limita el tamaño máximo a 750px */
+        height: auto; /* Mantiene la proporción de la imagen */
+        display: block; /* Evita espacios adicionales en línea */
+        margin: 0 auto; /* Centra la imagen horizontalmente */
+        border-radius: 25px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.672); /* Sombra para darle profundidad */
+
+    }
+    #quienes-somos {
+        padding: 20px; /* Añade espacio alrededor del contenido */
+        margin: 0 auto; /* Centra el contenido horizontalmente */
+        max-width: 1200px; /* Limita el ancho máximo para grandes pantallas */
+    }
+
+    footer p {
+        text-align: center; /* Cambia la alineación a centrado */
+        margin-bottom: 5px; /* Ajusta el espaciado inferior si es necesario */
     }

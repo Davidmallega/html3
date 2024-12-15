@@ -1,0 +1,125 @@
+/* Contenedor Principal del Grid */
+.grid-container {
+    display: grid; /* Activa CSS Grid */
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+    grid-template-rows: auto auto auto; /* Tres filas automáticas */
+    gap: 20px; /* Espaciado entre filas y columnas */
+    padding: 20px;
+    box-sizing: border-box; /* Incluye el padding dentro del tamaño total */
+}
+
+/* Áreas de la grilla */
+#quienes-somos {
+    grid-column: 1 / span 2; /* Ocupa ambas columnas en la primera fila */
+}
+
+#actividades {
+    grid-column: 1; /* Primera columna en la segunda fila */
+}
+
+#eventos {
+    grid-column: 2; /* Segunda columna en la segunda fila */
+}
+
+#temas-interes {
+    grid-column: 1; /* Primera columna en la tercera fila */
+}
+
+#videos-relacionados {
+    grid-column: 2; /* Segunda columna en la tercera fila */
+}
+
+
+/* Contenedor general */
+#media-section {
+    padding: 20px;
+    background-color: #ffffff; /* Fondo claro */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    margin-top: 20px;
+}
+
+#media-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Contenedor interno con disposición en columna */
+.media-container {
+    display: flex;
+    flex-direction: column; /* Elementos apilados verticalmente */
+    gap: 20px; /* Espaciado entre el audio y el video */
+}
+
+/* Estilo para el audio */
+.audio-content {
+    text-align: center;
+}
+
+.audio-content audio {
+    width: 100%; /* Que ocupe todo el ancho disponible */
+    margin: 10px 0;
+}
+
+/* Estilo para el video */
+.video-content {
+    text-align: center;
+}
+
+.video-content iframe {
+    width: 100%; /* El iframe ocupa el 100% del ancho disponible */
+    height:300px; /* Ajusta automáticamente la altura */
+    max-width: 500px; /* Limita el ancho máximo a 300px para evitar desbordes */
+    border-radius: 20px; /* Ajusta los bordes redondeados si son demasiado grandes */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); /* Reduce la sombra para un efecto más sutil */
+    margin: 10px auto; /* Centra el iframe y reduce el margen */
+}
+
+/* Footer General */
+.footer-content {
+    grid-column: span 2; /* Ocupa todo el ancho del grid */
+    text-align: center; /* Centra el contenido */
+    padding: 20px; /* Espaciado interno */
+    background-color: #f4f4f4; /* Fondo gris claro */
+    border-top: 1px solid #ddd; /* Línea superior */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-top: 20px;
+}
+
+/* Imagen del logo */
+.footer-content img {
+    max-width: 80px;
+    margin-bottom: 10px;
+}
+
+/* Texto del footer */
+.footer-content p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 600px) {
+    .footer-content {
+        text-align: center; /* Asegura que se mantenga centrado */
+    }
+}
+
+.grid-item:not(#quienes-somos) {
+    padding: 20px;
+    background-color: #fefefe; /* Fondo claro */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    margin-top: 20px; /* Espaciado entre secciones */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño */
+}
+
+.form-iframe {
+    width: 100%; /* Que ocupe el ancho completo */
+    height: 400px; /* Altura del iframe, ajusta según necesidad */
+    border: 1px solid #ddd; /* Borde ligero */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    margin-bottom: 20px; /* Espaciado entre iframes */
+}

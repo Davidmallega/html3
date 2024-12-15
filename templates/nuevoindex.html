@@ -1,4 +1,4 @@
-<!DOCTYPE html><!-- Index -->
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -7,12 +7,11 @@
     <link rel="stylesheet" href="../static/css/stylenav.css" type="text/css">
     <link rel="stylesheet" href="../static/css/estilos_eventos.css" type="text/css">
     <link rel="stylesheet" href="../static/css/temas-interes.css" type="text/css">
-    <link rel="stylesheet" href="../static/css/audio.css" type  = "text/css">
-    <link rel="stylesheet" href="../static/css/footer.css" type = "text/css">
+    <link rel="stylesheet" href="../static/css/audio.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/footer.css" type="text/css">
     <link rel="stylesheet" href="../static/css/estilos_actividades.css" type="text/css">
     <link rel="stylesheet" href="../static/css/global.css" type="text/css">
-    <link rel="stylesheet" href="../static/css/mobile_first.css" type="text/css">
-
+    <link rel="stylesheet" href="../static/css/grid_distribucion.css" type="text/css">
 </head>
 <body>
 
@@ -32,37 +31,29 @@
         </nav>
     </header>
 
-
-<main>
-
-    <div class="grid-container">
-        <section id="quienes-somos">
-            <h2>¿Quiénes Somos?</h2>
-            <p>Ecofuturo una organización sin fines de lucro dedicada a la conservación del medio ambiente y a la promoción de una sociedad más 
-                consciente y responsable con su entorno. Creemos firmemente en la importancia de educar a las personas sobre el impacto que nuestras 
-                acciones tienen en el planeta y en cómo podemos reducir nuestra huella ecológica a través de prácticas sostenibles.</p>
-            
-            <p>Desde nuestra fundación, hemos trabajado en la creación de espacios de aprendizaje y diálogo para sensibilizar sobre los efectos del 
-                cambio climático y la necesidad de adoptar estilos de vida más sostenibles. Organizamos eventos, campañas y talleres donde fomentamos 
-                la participación activa de la comunidad, convencidos de que el cambio empieza en cada uno de nosotros y en nuestras acciones diarias.</p>
-            
-            <p>A través de nuestras actividades, aspiramos a inspirar y empoderar a las personas para que se conviertan en agentes de cambio y 
-                promuevan un futuro más limpio, saludable y equilibrado para las generaciones presentes y futuras. Nuestra misión es clara: 
-                proteger y preservar el medio ambiente mientras fortalecemos una cultura de respeto y cuidado por la naturaleza.</p>
-            
-
+    <main>
+        <!-- Contenedor Principal para la cuadricula-->
+        <div class="grid-container">
+            <!-- ¿Quiénes Somos? -->
+            <section id="quienes-somos" class="grid-item full">
+                <h2>¿Quiénes Somos?</h2>
+                <p>Ecofuturo es una organización sin fines de lucro dedicada a la conservación del medio ambiente y a la promoción de una sociedad más 
+                    consciente y responsable con su entorno. Creemos firmemente en la importancia de educar a las personas sobre el impacto que nuestras 
+                    acciones tienen en el planeta y en cómo podemos reducir nuestra huella ecológica a través de prácticas sostenibles.</p>
+                <p>Desde nuestra fundación, hemos trabajado en la creación de espacios de aprendizaje y diálogo para sensibilizar sobre los efectos del 
+                    cambio climático y la necesidad de adoptar estilos de vida más sostenibles. Organizamos eventos, campañas y talleres donde fomentamos 
+                    la participación activa de la comunidad, convencidos de que el cambio empieza en cada uno de nosotros y en nuestras acciones diarias.</p>
+                <p>A través de nuestras actividades, aspiramos a inspirar y empoderar a las personas para que se conviertan en agentes de cambio y 
+                    promuevan un futuro más limpio, saludable y equilibrado para las generaciones presentes y futuras. Nuestra misión es clara: 
+                    proteger y preservar el medio ambiente mientras fortalecemos una cultura de respeto y cuidado por la naturaleza.</p>
                 <div class="imagenes">
-                    
                     <img src="../images/fondo3.jpg" alt="Impacto del cambio climático en el planeta" width="750">
                 </div>
             </section>
 
-                
-        <br><br><br>
-
-            <section id="actividades">
+            <!-- Actividades Realizadas -->
+            <section id="actividades" class="grid-item">
                 <h2>Actividades Realizadas</h2>
-                <br>
                 <ul>
                     <li>
                         <div class="actividad">
@@ -70,53 +61,49 @@
                             <div>
                                 <h3>Campaña de Reforestación</h3>
                                 <p>Participamos en campañas de reforestación para restaurar ecosistemas y aumentar la cobertura vegetal 
-                                en áreas degradadas. Esta actividad involucra a la comunidad en la plantación de árboles nativos, 
-                                contribuyendo a la lucha contra el cambio climático.</p>
+                                    en áreas degradadas. Esta actividad involucra a la comunidad en la plantación de árboles nativos, 
+                                    contribuyendo a la lucha contra el cambio climático.</p>
                             </div>
-                        </div>  
+                        </div>
                     </li>
-                        <br>
                     <li>
                         <div class="actividad">
                             <img src="../images/taller.jpg" alt="Personas aprendiendo sobre reciclaje" width="300">
                             <div>
                                 <h3>Taller de Reciclaje</h3>
                                 <p>Organizamos talleres educativos sobre el reciclaje y la reducción de residuos. En estos eventos, 
-                                los participantes aprenden a separar y reutilizar materiales, promoviendo una cultura de 
-                                sostenibilidad en su vida diaria.</p>
-                            </div>  
+                                    los participantes aprenden a separar y reutilizar materiales, promoviendo una cultura de 
+                                    sostenibilidad en su vida diaria.</p>
+                            </div>
                         </div>
                     </li>
-                        <br>
                     <li>
                         <div class="actividad">
                             <img src="../images/limpieza.jpg" alt="Voluntarios limpiando una playa" width="300">
                             <div>
                                 <h3>Jornada de Limpieza de Playas</h3>
                                 <p>Realizamos jornadas de limpieza de playas para proteger la biodiversidad marina y mantener nuestros 
-                                entornos naturales libres de contaminación. Esta actividad fomenta la responsabilidad ambiental 
-                                entre los voluntarios y la comunidad.</p>
+                                    entornos naturales libres de contaminación. Esta actividad fomenta la responsabilidad ambiental 
+                                    entre los voluntarios y la comunidad.</p>
                             </div>
                         </div>
                     </li>
-                        <br>
                     <li>
                         <div class="actividad">
                             <img src="../images/charla.jpg" alt="Charla educativa sobre el cambio climático" width="300">
                             <div>
                                 <h3>Charlas sobre el Cambio Climático</h3>
                                 <p>Ofrecemos charlas informativas para concienciar sobre los efectos del cambio climático. Estas sesiones 
-                                educativas están diseñadas para informar a la comunidad sobre los desafíos ambientales actuales y 
-                                la importancia de tomar medidas sostenibles.</p>
+                                    educativas están diseñadas para informar a la comunidad sobre los desafíos ambientales actuales y 
+                                    la importancia de tomar medidas sostenibles.</p>
                             </div>
                         </div>
                     </li>
                 </ul>
             </section>
 
-            <br>
-            
-            <section id="eventos">
+            <!-- Próximos Eventos -->
+            <section id="eventos"class="grid-item">
                 <h2>Próximos Eventos Planificados</h2>
                 <table border="1" cellpadding="10" cellspacing="0">
                     <thead>
@@ -168,13 +155,9 @@
                 </table>
             </section>
 
-            <br>
-            <br>
-            <br>
-
-
-        <div id="temas-interes">
-            
+            <!-- Temas de Interés -->
+            <section id="temas-interes"class="grid-item">
+                
                 <h2>Temas de Interés: Cambio Climático</h2>
                 <p>El cambio climático es uno de los desafíos más críticos que enfrenta nuestra sociedad en la actualidad. Se refiere a las variaciones significativas y 
                     prolongadas en los patrones climáticos globales. Estas alteraciones, que incluyen temperaturas más cálidas, cambios en los patrones de lluvia y un 
@@ -185,27 +168,23 @@
                     Entender estos efectos es crucial para desarrollar estrategias de mitigación que ayuden a proteger el medio ambiente y garantizar un 
                     futuro sostenible para las generaciones venideras.</p>
                 <br>
-                <h3>Impactos visibles del Cambio Climático</h3>
-
                 <div class="imagenes">
                     <div class="imagen-container">
                         <div class="alerta">ALERTA</div>
-                        <img src="../images/impacto.jpg" alt="Impacto del cambio climático en el planeta">
+                        <img src="../images/impacto.jpg" alt="Impacto ambiental">
                         <p>La creciente temperatura global está afectando tanto los ecosistemas naturales como los sistemas agrícolas. 
-                           Las sequías, las olas de calor y las tormentas severas se han vuelto más frecuentes, poniendo en riesgo la 
-                           seguridad alimentaria y la salud humana. Este cambio extremo obliga a comunidades rurales a migrar, 
-                           generando nuevos desafíos sociales y económicos.</p>
+                            Las sequías, las olas de calor y las tormentas severas se han vuelto más frecuentes, poniendo en riesgo la 
+                            seguridad alimentaria y la salud humana. Este cambio extremo obliga a comunidades rurales a migrar, 
+                            generando nuevos desafíos sociales y económicos.</p>
                     </div>
-                    
                     <div class="imagen-container">
                         <div class="alerta">ALERTA</div>
                         <img src="../images/deshielo.jpeg" alt="Deshielo en las zonas polares">
                         <p>El derretimiento de los casquetes polares está contribuyendo al aumento del nivel del mar, lo que amenaza 
-                           a las comunidades costeras y la vida marina. Si no se toman medidas urgentes, muchas especies podrían 
-                           enfrentar la extinción. Además, el deshielo libera gases atrapados como el metano, agravando el efecto 
-                           invernadero y acelerando el cambio climático.</p>
+                            a las comunidades costeras y la vida marina. Si no se toman medidas urgentes, muchas especies podrían 
+                            enfrentar la extinción. Además, el deshielo libera gases atrapados como el metano, agravando el efecto 
+                            invernadero y acelerando el cambio climático.</p>
                     </div>
-                
                     <div class="imagen-container">
                         <div class="alerta">ALERTA</div>
                         <img src="../images/efectobio.jpg" alt="Efectos del cambio climático en la biodiversidad">
@@ -223,49 +202,59 @@
                              ecológico irreversible..</p>
                     </div>
                 </div>
-                
+            </section>
 
-                <br>
-                    <div class="container">
-                            <div id="audio">
-                                <!-- Audio educativo sobre el cambio climático -->
-                                <h3>Escucha más sobre este tema</h3>
-                                <audio controls>
-                                    <source src="../static/audios/audio.cambio_mp3.mp3" type="audio/mpeg">
-                                    <source src="../static/audios/audio.cambio_ogg.ogg" type="audio/ogg">
-                                    Tu navegador no soporta el elemento de audio.
-                                </audio>
-                                <p>Escucha este audio para obtener más información sobre cómo el cambio climático está afectando nuestro mundo y qué acciones podemos tomar para reducir nuestro impacto.</p>
-                            
-                    
-                                <!-- Enlace para más información -->
-                                <p>
-                                    Para más información sobre el cambio climático, visita el siguiente enlace: 
-                                    <a href="https://es.wikipedia.org/wiki/Cambio_clim%C3%A1tico" target="_blank">Más sobre Cambio Climático</a>
-                                </p>
-                            </section>
-                        </div>
-                    </div> 
+            <section id="media-section">
+                <h2>Contenido Multimedia</h2>
+                <div class="media-container">
+                    <!-- Audio -->
+                    <div class="audio-content">
+                        <h3>Escucha más sobre este tema</h3>
+                        <audio controls>
+                            <source src="../static/audios/audio.cambio_mp3.mp3" type="audio/mpeg">
+                            <source src="../static/audios/audio.cambio_ogg.ogg" type="audio/ogg">
+                            Tu navegador no soporta el elemento de audio.
+                        </audio>
+                        <p>
+                            Escucha este audio para obtener más información sobre cómo el cambio climático está afectando nuestro mundo y qué acciones podemos tomar para reducir nuestro impacto.
+                        </p>
+                        <p>
+                            Para más información sobre el cambio climático, visita el siguiente enlace: 
+                            <a href="https://es.wikipedia.org/wiki/Cambio_clim%C3%A1tico" target="_blank">Más sobre Cambio Climático</a>
+                        </p>
+                    </div>
             
-                    <section id="videos-relacionados">
-                        <h2>Videos Relacionados</h2>
-                        <div class="video-container">
-                            <iframe 
-                                src="https://www.youtube.com/embed/F2GCrL-K4t0?si=ASKL-4CTIbajP1Rz" 
-                                title="YouTube video player" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                allowfullscreen>
-                            </iframe>
-                        </div>
-                        <br>
+                    <!-- Video -->
+                    <div class="video-content">
+                        <h3>Videos Relacionados</h3>
+                        <iframe 
+                            src="https://www.youtube.com/embed/F2GCrL-K4t0?si=ASKL-4CTIbajP1Rz" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
                         <p>Explora más videos sobre el cambio climático para entender su impacto.</p>
-                        <br>
-                    </section>
-    
-    </main>
-    <br>
-</div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="acceso">
+                <div class="container">
+                    
+                    <iframe src="acceso.html" frameborder="0" style="width: 100%; height: 500px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);"></iframe>
+                </div>
+            </section>
+            
+            <section id="registro">
+                <div class="container">
+                   
+                    <iframe src="registro.html" frameborder="0" style="width: 100%; height: 600px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);"></iframe>
+                </div>
+            </section>
+            
+            
+
             <footer class="footer-content">
                 <a href="index.html">
                     <img src="../images/iso-02-02.png" alt="Logo de la empresa" class="logo-empresa-iso">
@@ -273,6 +262,6 @@
                 <p>&copy; 2024 Organización Ambiental. Todos los derechos reservados.</p>
                 <p>Contacto: <a href="mailto:info@ecofuturo.org">info@ecofuturo.org</a></p>
             </footer>
+        </div>
 </body>
 </html>
-

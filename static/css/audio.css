@@ -1,6 +1,6 @@
 
 #audio audio {
-    width: 50%; /* Ajustar el tamaño del audio */
+    width: 80%; /* Ajustar el tamaño del audio */
     margin-bottom: 20px; /* Espacio debajo del audio */
     display: block; /* Alinear el audio en bloque */
     margin: 0 auto; /* Centrar el audio */
@@ -14,7 +14,7 @@
 
 .container {
     display: flex;
-    margin: 40px; /* marge a la pagina */
+    margin: 4px; /* marge a la pagina */
     background-color: rgb(255, 255, 255);
     padding: 20px; /* Espacio adicional alrededor del contenedor */
     border-radius: 25px; /* Ajustar el radio del borde */
@@ -29,9 +29,20 @@
     text-align: center; /* Centrar el texto */
 }
 
-iframe {
-    display: block;
-    margin: 20px auto; /* Centra la imagen */
-    border-radius: 35px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+.video-container {
+    position: relative; /* Necesario para que el iframe ocupe el contenedor */
+    width: 100%; /* Ocupa el 100% del ancho disponible */
+    max-width: 560px; /* Máximo ancho del video */
+    margin: 0 auto; /* Centra horizontalmente el contenedor */
+    aspect-ratio: 16 / 9; /* Mantiene la proporción 16:9 */
+    }
+
+.video-container iframe {
+    position: absolute; /* Posiciona el iframe dentro del contenedor */
+    top: 0;
+    left: 0;
+    width: 100%; /* El iframe ocupa todo el ancho del contenedor */
+    height: 100%; /* El iframe ocupa toda la altura del contenedor */
+    border-radius: 10px; /* Opcional: bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: sombra para mejorar el diseño */
 }
