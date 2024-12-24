@@ -1,0 +1,31 @@
+#quienes-somos h2 {
+    font-family: 'Georgia', serif; /* Fuente exclusiva para esta sección */
+    color: #004d99; /* Color azul oscuro */
+    font-size: 2.5em; /* Tamaño mayor para destacar el encabezado */
+    text-align: center; /* Centra el texto */
+    margin-bottom: 20px; /* Espaciado inferior */
+    }
+
+    #quienes-somos p {
+    font-family: 'Georgia', serif;/* Fuente exclusiva para esta sección */
+    font-size: 1.2em; /* Texto más grande para esta sección */
+    line-height: 1.8; /* Espaciado entre líneas más amplio */
+    color: #161515; /* Color de texto más oscuro */ 
+    
+}
+
+    #quienes-somos .imagenes img {
+        width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+        max-width: 750px; /* Limita el tamaño máximo a 750px */
+        height: auto; /* Mantiene la proporción de la imagen */
+        display: block; /* Evita espacios adicionales en línea */
+        margin: 0 auto; /* Centra la imagen horizontalmente */
+        border-radius: 25px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.672); /* Sombra para darle profundidad */
+
+    }
+    #quienes-somos {
+        padding: 20px; /* Añade espacio alrededor del contenido */
+        margin: 0 auto; /* Centra el contenido horizontalmente */
+        max-width: 1200px; /* Limita el ancho máximo para grandes pantallas */
+    }

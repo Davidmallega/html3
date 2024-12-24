@@ -29,3 +29,7 @@
     margin: 10px auto; /* Centra el logo y agrega margen superior e inferior */
 }
 
+footer p {
+    text-align: center; /* Cambia la alineación a centrado */
+    margin-bottom: 5px; /* Ajusta el espaciado inferior si es necesario */
+}

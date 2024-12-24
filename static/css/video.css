@@ -1,0 +1,48 @@
+.video-container {
+    position: relative; /* Necesario para que el iframe ocupe el contenedor */
+    width: 100%; /* Ocupa el 100% del ancho disponible */
+    max-width: 560px; /* Máximo ancho del video */
+    margin: 20px auto; /* Centra horizontalmente y añade margen superior/inferior */
+    aspect-ratio: 16 / 9; /* Mantiene la proporción 16:9 */
+}
+
+.video-container iframe {
+    position: absolute; /* Posiciona el iframe dentro del contenedor */
+    top: 0;
+    left: 0;
+    width: 100%; /* El iframe ocupa todo el ancho del contenedor */
+    height: 100%; /* El iframe ocupa toda la altura del contenedor */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/* Media Queries */
+
+/* Pantallas pequeñas (menores a 600px) */
+@media (max-width: 600px) {
+    .video-container {
+        max-width: 320px; /* Reduce el tamaño máximo en pantallas pequeñas */
+    }
+
+    iframe {
+        border-radius: 5px; /* Bordes más pequeños */
+    }
+}
+
+/* Pantallas medianas (700px a 1024px) */
+@media (min-width: 700px) and (max-width: 1024px) {
+    .video-container {
+        max-width: 480px; /* Ajusta el tamaño máximo en tablets */
+    }
+}
+
+/* Pantallas grandes (1024px en adelante) */
+@media (min-width: 1024px) {
+    .video-container {
+        max-width: 720px; /* Aumenta el tamaño máximo en pantallas grandes */
+    }
+
+    iframe {
+        border-radius: 15px; /* Bordes más redondeados */
+    }
+}

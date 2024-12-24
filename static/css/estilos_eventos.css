@@ -1,41 +1,78 @@
-/* Estilo para la tabla */
+/* Contenedor principal de eventos */
+#eventos {
+    max-width: 1200px; /* Limita el ancho máximo */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 20px; /* Espaciado interno */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+/* Tabla */
 #eventos table {
-    width: 100%; /* Ocupa todo el ancho disponible */
-    border-collapse: collapse; /* Elimina espacios entre celdas */
-    margin-top: 20px;
-    background-color: #f9f9f9; /* Fondo claro */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
-
+    width: 100%; /* Ajusta automáticamente al ancho del contenedor */
+    border-collapse: collapse; /* Bordes compactos */
+    margin: 0 auto; /* Centra la tabla */
 }
 
+/* Cabecera y celdas */
 #eventos th, #eventos td {
-    text-align: left; /* Alineación de texto a la izquierda */
+    text-align: center; /* Centra el texto */
     padding: 10px; /* Espaciado interno */
-    border: 1px solid #ddd; /* Bordes claros */
-    word-wrap: break-word;/* Permite que el texto se divida en varias líneas */
+    font-size: 0.9em; /* Tamaño de fuente ajustado */
+    word-wrap: break-word; /* Permite dividir texto largo */
+    border: 1px solid #ddd; /* Bordes ligeros */
 }
 
+/* Encabezado de la tabla */
 #eventos th {
-    background-color: #004d99; /* Fondo azul oscuro */
-    color: white; /* Texto blanco */
-    font-weight: bold;
-    
+    background-color: #f4f4f4; /* Color de fondo de la cabecera */
+    font-weight: bold; /* Texto en negrita */
 }
 
+/* Filas alternas */
 #eventos tr:nth-child(even) {
-    background-color: #f1f1f1; /* Color alternado para filas pares */
+    background-color: #f9f9f9; /* Color alterno */
 }
 
 #eventos tr:hover {
-    background-color: #23bef253; /* Fondo más claro al pasar el cursor */
+    background-color: #76cff9; /* Color de fondo al pasar el cursor */
+    transition: background-color 0.3s ease-in-out; /* Animación suave */
 }
 
-#eventos img {
-    width: 24px; /* Ajusta el tamaño de los íconos para que no sean demasiado grandes */
-    height: auto;
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 600px) {
+    #eventos {
+        padding: 10px; /* Reduce el padding en móviles */
+    }
+
+    #eventos th, #eventos td {
+        font-size: 0.8em; /* Texto más pequeño */
+        padding: 5px; /* Reduce el espaciado */
+    }
+
+    #eventos table {
+        overflow-x: auto; /* Habilita desplazamiento horizontal */
+    }
 }
-#eventos table {
-    width: calc(100% - 40px); /* Reducir el ancho para dejar espacio */
-    margin-right: 20px; /* Separa el borde derecho */
-    margin-left: 20px; /* Si deseas centrar simétricamente */
+
+/* Ajustes para pantallas medianas */
+@media (min-width: 700px) and (max-width: 1024px) {
+    #eventos {
+        padding: 15px; /* Ajusta el padding en tablets */
+    }
+
+    #eventos table {
+        width: 95%; /* Ajusta el ancho de la tabla */
+    }
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 1024px) {
+    #eventos {
+        padding: 20px; /* Padding estándar */
+    }
+
+    #eventos th, #eventos td {
+        font-size: 1em; /* Ajusta el tamaño del texto */
+        padding: 10px; /* Padding más amplio */
+    }
 }

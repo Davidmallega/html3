@@ -1,15 +1,26 @@
-
+#audio {
+    display: flex; /* Flexbox para centrar contenido */
+    flex-direction: column; /* Alinea los elementos en columna */
+    justify-content: center; /* Centrar verticalmente el contenido */
+    align-items: center; /* Centrar horizontalmente el contenido */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 1200px; /* Limita el ancho en pantallas grandes */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 20px; /* Espaciado interno */
+    box-sizing: border-box; /* Incluye padding en el ancho */
+    background-color: transparent; /* Si necesitas un fondo, cámbialo */
+}
+/* Reproductor de audio */
 #audio audio {
-    width: 80%; /* Ajustar el tamaño del audio */
-    margin-bottom: 20px; /* Espacio debajo del audio */
-    display: block; /* Alinear el audio en bloque */
-    margin: 0 auto; /* Centrar el audio */
+    width: 80%; /* Ancho base del reproductor */
+    max-width: 800px; /* Máximo para pantallas grandes */
+    margin: 10px 0; /* Espaciado superior e inferior */
 }
 
+/* Texto dentro del contenedor */
 #audio p {
-    margin-top: 10px; /* Espacio entre el audio y el texto */
-    text-align: center; /* Centrar el texto */
-    
+    text-align: center; /* Centra el texto */
+    margin-top: 10px;
 }
 
 .container {
@@ -19,6 +30,7 @@
     padding: 20px; /* Espacio adicional alrededor del contenedor */
     border-radius: 25px; /* Ajustar el radio del borde */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.441);
+
     
 }
 
@@ -29,20 +41,5 @@
     text-align: center; /* Centrar el texto */
 }
 
-.video-container {
-    position: relative; /* Necesario para que el iframe ocupe el contenedor */
-    width: 100%; /* Ocupa el 100% del ancho disponible */
-    max-width: 560px; /* Máximo ancho del video */
-    margin: 0 auto; /* Centra horizontalmente el contenedor */
-    aspect-ratio: 16 / 9; /* Mantiene la proporción 16:9 */
-    }
 
-.video-container iframe {
-    position: absolute; /* Posiciona el iframe dentro del contenedor */
-    top: 0;
-    left: 0;
-    width: 100%; /* El iframe ocupa todo el ancho del contenedor */
-    height: 100%; /* El iframe ocupa toda la altura del contenedor */
-    border-radius: 10px; /* Opcional: bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: sombra para mejorar el diseño */
-}
+

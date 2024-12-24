@@ -10,7 +10,6 @@ header{
     text-align: center;
     padding: 8px;
     background-color: #0288d1; /* Fondo azul */
-    color: white;
 }
 
 /* Navbar para móviles */
@@ -23,7 +22,6 @@ nav ul {
     justify-content: center; /* Centra los elementos */
     gap: 5px; /* Espacio entre elementos */
     background-color: #0288d1; /* Fondo azul del navbar */
-    border-radius: 25px;
 }
 
 nav ul li {
@@ -36,57 +34,17 @@ nav ul li a {
     font-size: 12px; /* Texto más pequeño en móviles */
     padding: 5px 10px; /* Espaciado interno reducido */
     display: block;
-    text-align: center;
+}
+nav ul li a:hover {
+    color: #060606; 
 }
 
+@media (max-width: 360px) and (max-height: 640px) {
 
-/* Estilos para las actividades (Mobile First) */
-.actividad {
-    display: flex;
-    flex-direction: column; /* Elementos apilados verticalmente */
-    align-items: center; /* Centra los elementos */
-    gap: 15px; /* Espaciado entre imagen y texto */
 }
 
-.actividad img {
-    width: 90%; /* Imagen ocupa 90% del ancho del contenedor */
-    max-width: 300px; /* Limita el tamaño máximo a 300px */
-    height: auto; /* Mantiene proporciones */
-    border-radius: 15px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ligera */
-}
-
-.actividad h3 {
-    text-align: center; /* Centrar título */
-    font-size: 1.3em; /* Ajuste del tamaño */
-    margin: 0; /* Sin márgenes extra */
-}
-
-.actividad p {
-    text-align: justify; /* Justificar texto */
-    font-size: 1em; /* Tamaño estándar */
-    line-height: 1.5; /* Espaciado entre líneas */
-    margin: 0 10px; /* Margen lateral para separar del borde */
-}
-
-@media (max-width: 600px) {
-    #eventos {
-        overflow-x: auto; /* Activa desplazamiento horizontal */
-        white-space: nowrap; /* Evita que las celdas se rompan */
-    }
-
-    #eventos table {
-        width: auto; /* Deja que la tabla sea más ancha que su contenedor */
-        
-    }
-
-    #eventos th, #eventos td {
-        font-size: 0.9rem; /* Reduce el tamaño del texto */
-    }
-}
-
-/* Media Query para tablets (600px - 1024px) */
-@media (min-width: 600px) {
+/* Media Query para tablets (700px - 1024px) */
+@media (min-width: 700px) {
     body {
         font-size: 16px; /* Texto ligeramente más grande */
     }
@@ -101,38 +59,8 @@ nav ul li a {
         padding: 10px 15px; /* Espaciado interno mayor */
     }
 
-    .grid-container {
-        flex-direction: row; /* Cambia a filas */
-        flex-wrap: wrap; /* Permite que los elementos bajen si es necesario */
-        gap: 20px; /* Más espacio entre elementos */
-        justify-content: center; /* Centra el contenido */
-    }
 
-    .grid-container > div {
-        flex: 0 1 calc(50% - 20px); /* 2 columnas en tablets */
-        box-sizing: border-box;
-    }
-
-    .actividad {
-        flex-direction: row; /* Alineación horizontal */
-        align-items: flex-start; /* Elementos alineados al inicio */
-        gap: 20px;
-    }
-
-    .actividad img {
-        width: 45%; /* Imagen ocupa el 45% del espacio */
-    }
-
-    .actividad h3 {
-        text-align: center; /* Títulos alineados a la izquierda */
-        font-size: 1.5em; /* Texto más grande */
-    }
-
-    .actividad p {
-        font-size: 1.1em; /* Texto ligeramente más grande */
-    }
 }
-
 
 /* Media Query para PC (>1024px) */
 @media (min-width: 1024px) {
@@ -150,67 +78,7 @@ nav ul li a {
         padding: 10px 20px; /* Más espaciado interno */
     }
 
-    .grid-container {
-        gap: 30px; /* Más espacio entre elementos */
-    }
-
-    .actividad {
-        gap: 30px; /* Mayor espacio entre elementos */
-    }
-
-    .actividad img {
-        width: 30%; /* Imagen ocupa el 30% del espacio */
-    }
-
-    .actividad h3 {
-        
-        font-size: 1.6em; /* Títulos más grandes */
-    }
-
-    .actividad p {
-        font-size: 1.2em; /* Texto más grande */
-    }
 }
-
-@media (max-width: 360px) and (max-height: 640px) {
-    #temas-interes .imagenes {
-        display: flex; /* Mantén Flexbox */
-        flex-wrap: wrap; /* Permite varias filas */
-        gap: 15px; /* Espaciado entre los elementos */
-        justify-content: center; /* Centra horizontalmente */
-    }
-
-    #temas-interes .imagen-container {
-        flex: 0 1 calc(45% - 10px); /* Ocupa 45% del ancho con espacio entre ellos */
-        box-sizing: border-box; /* Mantén el padding dentro */
-    }
-
-    #temas-interes .imagen-container img {
-        width: 100%; /* Imagen ocupa todo el ancho del contenedor */
-        height: auto; /* Mantiene proporción */
-    }
-
-    #temas-interes .imagen-container p {
-        max-height: 100px; /* Limita el texto a 100px de alto */
-        overflow-y: auto; /* Agrega scroll si el texto es muy largo */
-        font-size: 0.85em; /* Texto más pequeño */
-        line-height: 1.4; /* Espaciado entre líneas ajustado */
-    }
-    iframe {
-        width: 100%; /* El iframe ocupa el 100% del ancho disponible */
-        height: auto; /* Ajusta automáticamente la altura */
-        max-width: 300px; /* Limita el ancho máximo a 300px para evitar desbordes */
-        border-radius: 20px; /* Ajusta los bordes redondeados si son demasiado grandes */
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); /* Reduce la sombra para un efecto más sutil */
-        margin: 10px auto; /* Centra el iframe y reduce el margen */
-    }
-    
-        .video-container {
-            max-width: 300px; /* Reduce el tamaño máximo en pantallas pequeñas */
-        }
-    
-}
-
 
 @media print {
     body {

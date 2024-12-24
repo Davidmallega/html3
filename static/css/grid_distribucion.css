@@ -12,11 +12,9 @@
 #quienes-somos {
     grid-column: 1 / span 2; /* Ocupa ambas columnas en la primera fila */
 }
-
 #actividades {
     grid-column: 1; /* Primera columna en la segunda fila */
 }
-
 #eventos {
     grid-column: 2; /* Segunda columna en la segunda fila */
 }
@@ -28,7 +26,6 @@
 #videos-relacionados {
     grid-column: 2; /* Segunda columna en la tercera fila */
 }
-
 
 /* Contenedor general */
 #media-section {

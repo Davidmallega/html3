@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecofuturo</title>
-    <link rel="stylesheet" href="../static/css/stylenav.css" type="text/css">
+    
     <link rel="stylesheet" href="../static/css/estilos_eventos.css" type="text/css">
     <link rel="stylesheet" href="../static/css/temas-interes.css" type="text/css">
     <link rel="stylesheet" href="../static/css/audio.css" type  = "text/css">
@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="../static/css/estilos_actividades.css" type="text/css">
     <link rel="stylesheet" href="../static/css/global.css" type="text/css">
     <link rel="stylesheet" href="../static/css/mobile_first.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/stylenav.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/video.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/quienes_somos.css" type="text/css">
 
 </head>
 <body>
@@ -19,8 +22,13 @@
     <img src="../images/logo.png" alt="Logo de la empresa" class="logo-empresa">
 
     <header>
-        <nav>
-            <ul>
+        <nav class="navbar">
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
                 <li><a href="#quienes-somos">Quienes Somos</a></li>
                 <li><a href="#actividades">Actividades</a></li>
                 <li><a href="#eventos">Eventos</a></li>
@@ -60,59 +68,81 @@
                 
         <br><br><br>
 
-            <section id="actividades">
-                <h2>Actividades Realizadas</h2>
-                <br>
-                <ul>
-                    <li>
-                        <div class="actividad">
-                            <img src="../images/reforestacion.jpg" alt="Personas plantando árboles" width="300">
-                            <div>
-                                <h3>Campaña de Reforestación</h3>
-                                <p>Participamos en campañas de reforestación para restaurar ecosistemas y aumentar la cobertura vegetal 
-                                en áreas degradadas. Esta actividad involucra a la comunidad en la plantación de árboles nativos, 
-                                contribuyendo a la lucha contra el cambio climático.</p>
-                            </div>
-                        </div>  
-                    </li>
-                        <br>
-                    <li>
-                        <div class="actividad">
-                            <img src="../images/taller.jpg" alt="Personas aprendiendo sobre reciclaje" width="300">
-                            <div>
-                                <h3>Taller de Reciclaje</h3>
-                                <p>Organizamos talleres educativos sobre el reciclaje y la reducción de residuos. En estos eventos, 
-                                los participantes aprenden a separar y reutilizar materiales, promoviendo una cultura de 
-                                sostenibilidad en su vida diaria.</p>
-                            </div>  
-                        </div>
-                    </li>
-                        <br>
-                    <li>
-                        <div class="actividad">
-                            <img src="../images/limpieza.jpg" alt="Voluntarios limpiando una playa" width="300">
-                            <div>
-                                <h3>Jornada de Limpieza de Playas</h3>
-                                <p>Realizamos jornadas de limpieza de playas para proteger la biodiversidad marina y mantener nuestros 
-                                entornos naturales libres de contaminación. Esta actividad fomenta la responsabilidad ambiental 
-                                entre los voluntarios y la comunidad.</p>
-                            </div>
-                        </div>
-                    </li>
-                        <br>
-                    <li>
-                        <div class="actividad">
-                            <img src="../images/charla.jpg" alt="Charla educativa sobre el cambio climático" width="300">
-                            <div>
-                                <h3>Charlas sobre el Cambio Climático</h3>
-                                <p>Ofrecemos charlas informativas para concienciar sobre los efectos del cambio climático. Estas sesiones 
-                                educativas están diseñadas para informar a la comunidad sobre los desafíos ambientales actuales y 
-                                la importancia de tomar medidas sostenibles.</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </section>
+        <section id="actividades">
+            <h2>Actividades Realizadas</h2>
+            <div class="grid-actividades">
+                <div class="actividad">
+                    <img src="../images/reforestacion.jpg" alt="Personas plantando árboles">
+                    <div>
+                        <h3>Campaña de Reforestación</h3>
+                        <p>
+                            Participamos en campañas de reforestación para restaurar ecosistemas y aumentar la cobertura vegetal 
+                            en áreas degradadas. Esta actividad involucra a la comunidad en la plantación de árboles nativos, 
+                            contribuyendo a la lucha contra el cambio climático.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="actividad">
+                    <img src="../images/taller.jpg" alt="Personas aprendiendo sobre reciclaje">
+                    <div>
+                        <h3>Taller de Reciclaje</h3>
+                        <p>
+                            Organizamos talleres educativos sobre el reciclaje y la reducción de residuos. En estos eventos, 
+                            los participantes aprenden a separar y reutilizar materiales, promoviendo una cultura de 
+                            sostenibilidad en su vida diaria.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="actividad">
+                    <img src="../images/limpieza.jpg" alt="Voluntarios limpiando una playa">
+                    <div>
+                        <h3>Jornada de Limpieza de Playas</h3>
+                        <p>
+                            Realizamos jornadas de limpieza de playas para proteger la biodiversidad marina y mantener nuestros 
+                            entornos naturales libres de contaminación. Esta actividad fomenta la responsabilidad ambiental 
+                            entre los voluntarios y la comunidad.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="actividad">
+                    <img src="../images/charla.jpg" alt="Charla educativa sobre el cambio climático">
+                    <div>
+                        <h3>Charlas sobre el Cambio Climático</h3>
+                        <p>
+                            Ofrecemos charlas informativas para concienciar sobre los efectos del cambio climático. Estas sesiones 
+                            educativas están diseñadas para informar a la comunidad sobre los desafíos ambientales actuales y 
+                            la importancia de tomar medidas sostenibles.
+                        </p>
+                    </div>
+                </div>
+            
+                <div class="actividad">
+                    <img src="../images/bombillas.jpg" alt="Charla educativa sobre el cambio climático">
+                    <div>
+                        <h3>Ilumina tu hogar, cuida el planeta</h3>
+                        <p>Cambiar bombillas tradicionales por LED reduce el consumo de energía y la huella de carbono. Son más duraderas y eficientes. 
+                        Invita a tus amigos y familiares a unirse a este pequeño cambio para cuidar el planeta.
+                    </p>
+                </div>
+            </div>
+            
+                <div class="actividad">
+                    <img src="../images/biodegradable.jpg" alt="Charla educativa sobre el cambio climático">
+                    <div>
+                        <h3>Elige lo biodegradable</h3>
+                        <p>Usar productos biodegradables reduce la contaminación y protege el planeta. 
+                            Se descomponen naturalmente, evitando el daño de los plásticos. Haz este 
+                            simple cambio y promueve un consumo responsable.</p>        
+                </div>
+            </div>
+
+        </div>
+        </section>
+        
+        
 
             <br>
             
@@ -222,7 +252,24 @@
                              vulnerables. Muchas son fundamentales para los ecosistemas, y su pérdida podría desencadenar un desequilibrio 
                              ecológico irreversible..</p>
                     </div>
+
+                    <div class="imagen-container">
+                        <div class="alerta">ALERTA</div>
+                        <img src="../images/clima.jpg" alt="Efectos del cambio climático en la biodiversidad">
+                        <p>Las tormentas costeras, intensificadas por el calentamiento global, elevan el nivel del mar y 
+                            causan inundaciones. Este fenómeno destruye infraestructuras y amenaza comunidades, exigiendo
+                             medidas para reducir emisiones y proteger las costas.</p>
+                    </div>
+
+                    <div class="imagen-container">
+                        <div class="alerta">ALERTA</div>
+                        <img src="../images/basura.jpg" alt="Efectos del cambio climático en la biodiversidad">
+                        <p>El exceso de basura humana contamina suelos, aguas y destruye ecosistemas. Los plásticos, 
+                            de lenta degradación, amenazan la biodiversidad. Es urgente reciclar, reducir desechos y 
+                            adoptar prácticas sostenibles para proteger el planeta.</p>
+                    </div>
                 </div>
+                
                 
 
                 <br>
@@ -273,6 +320,8 @@
                 <p>&copy; 2024 Organización Ambiental. Todos los derechos reservados.</p>
                 <p>Contacto: <a href="mailto:info@ecofuturo.org">info@ecofuturo.org</a></p>
             </footer>
+            <!--script para el menu  -->
+            <script src="../static/js/nav.js" defer></script>
 </body>
 </html>
 
